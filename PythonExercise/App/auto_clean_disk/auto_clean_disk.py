@@ -24,7 +24,6 @@ def delete_file_or_dir(path):
     except WindowsError:
         print('failure: ' + path + " can't remove")
 
-
 def main():
     # 遍历指定目录底下的所有文件，目录
     for roots, dirs, files in os.walk(root_sys_drive):
@@ -45,7 +44,6 @@ def main():
                 complete_path = os.path.join(roots, find_dir)
                 # 删除文件
                 delete_file_or_dir(complete_path)
-
 
 if __name__ == '__main__':
     main()
