@@ -9,7 +9,6 @@ from fake_useragent import UserAgent
 # 实例化一个ua对象
 ua = UserAgent()
 
-
 class PythonBookSpider(object):
     """爬取京东商城前20页的Python书籍"""
     def __init__(self):
@@ -82,7 +81,6 @@ class PythonBookSpider(object):
         b_rank = b_rank[0].split(":")[1] if b_rank else ""
 
         return True, b_rank
-
 
     def save_book_info(self, books_list):
         """

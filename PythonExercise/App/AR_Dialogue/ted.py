@@ -81,7 +81,6 @@ def yuyin():
         if target == -1:
             continue
 
-
 def chatbox():
 
     chatpng = "chat.png"
@@ -137,8 +136,6 @@ def chatbox():
     #退出摄像头、关闭窗口
     cap.release()
     cv2.destroyAllWindows()
-
-
 
 talk="Hello World!"
 threads = []
